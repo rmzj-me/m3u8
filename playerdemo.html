@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>前端播放m3u8格式视频</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/video.js/7.10.1/alt/video-js-cdn.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/video.js/7.10.1/alt/video.core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+  <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+  <style>
+    .video-js .vjs-tech {
+      position: relative !important;
+    }
+  </style>
+
+  <div>
+    <video id="myvideo" width="100%" height="100%" class="video-js vjs-default-skin" controls></video>
+
+    <script>
+      var _0xodT = 'jsjiami.com.v6', _0xodT_ = ['‮_0xodT'], _0x10ef = [_0xodT, 'wqJ/wpE=', 'AgfCtFjCrMKDY2E4BsKrwpBlw4XCrA==', 'wqHDh8OM', 'ccOFFwsowpN7L8Onw4snVMK4MmDCgRnChcK7YjA=', 'wq7CkMK8wpk=', 'wodBwrzCrQ==', 'w7LCq8KSBsK5OsKD', 'wozCsSA=', 'wqggwpLDjcKawq4kwrc=', 'w47CisOEwpPDu18=', 'w7DDgcKNG8OR', 'wr7ChcKWZx8=', 'HcKcwrbCsg==', 'w6fDlMKCAMOcw77Drw==', 'w7zDu8O/DMKDwrHDq8KN', 'wpzCrS8=', 'B8KkwrUz', 'jsjiALOamiHq.GcdomV.vq6HgpdbXX==']; if (function (_0x236c59, _0x1d796a, _0x1e40ec) { function _0x331f5f(_0x497ead, _0x3ece90, _0x16f855, _0x947e98, _0xc7f3a9, _0x3d75f5) { _0x3ece90 = _0x3ece90 >> 0x8, _0xc7f3a9 = 'po'; var _0x164d95 = 'shift', _0x86fde9 = 'push', _0x3d75f5 = '‮'; if (_0x3ece90 < _0x497ead) { while (--_0x497ead) { _0x947e98 = _0x236c59[_0x164d95](); if (_0x3ece90 === _0x497ead && _0x3d75f5 === '‮' && _0x3d75f5['length'] === 0x1) { _0x3ece90 = _0x947e98, _0x16f855 = _0x236c59[_0xc7f3a9 + 'p'](); } else if (_0x3ece90 && _0x16f855['replace'](/[ALOHqGdVqHgpdbXX=]/g, '') === _0x3ece90) { _0x236c59[_0x86fde9](_0x947e98); } } _0x236c59[_0x86fde9](_0x236c59[_0x164d95]()); } return 0xee80a; }; return _0x331f5f(++_0x1d796a, _0x1e40ec) >> _0x1d796a ^ _0x1e40ec; }(_0x10ef, 0x9f, 0x9f00), _0x10ef) { _0xodT_ = _0x10ef['length'] ^ 0x9f; }; function _0x3277(_0x3a034e, _0x42782b) { _0x3a034e = ~~'0x'['concat'](_0x3a034e['slice'](0x1)); var _0x25feb6 = _0x10ef[_0x3a034e]; if (_0x3277['SYpFPZ'] === undefined) { (function () { var _0x1d2363 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this; var _0x2958da = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='; _0x1d2363['atob'] || (_0x1d2363['atob'] = function (_0x1a275f) { var _0x5d9d25 = String(_0x1a275f)['replace'](/=+$/, ''); for (var _0x1e863a = 0x0, _0xeddec3, _0x42cab4, _0x4c8e98 = 0x0, _0x3afef5 = ''; _0x42cab4 = _0x5d9d25['charAt'](_0x4c8e98++); ~_0x42cab4 && (_0xeddec3 = _0x1e863a % 0x4 ? _0xeddec3 * 0x40 + _0x42cab4 : _0x42cab4, _0x1e863a++ % 0x4) ? _0x3afef5 += String['fromCharCode'](0xff & _0xeddec3 >> (-0x2 * _0x1e863a & 0x6)) : 0x0) { _0x42cab4 = _0x2958da['indexOf'](_0x42cab4); } return _0x3afef5; }); }()); function _0x94b928(_0x1a9ff8, _0x42782b) { var _0x2dcf60 = [], _0x1a7be1 = 0x0, _0x1172dd, _0x174bc7 = '', _0x3c72ee = ''; _0x1a9ff8 = atob(_0x1a9ff8); for (var _0x107cf = 0x0, _0x501fbd = _0x1a9ff8['length']; _0x107cf < _0x501fbd; _0x107cf++) { _0x3c72ee += '%' + ('00' + _0x1a9ff8['charCodeAt'](_0x107cf)['toString'](0x10))['slice'](-0x2); } _0x1a9ff8 = decodeURIComponent(_0x3c72ee); for (var _0x4854b6 = 0x0; _0x4854b6 < 0x100; _0x4854b6++) { _0x2dcf60[_0x4854b6] = _0x4854b6; } for (_0x4854b6 = 0x0; _0x4854b6 < 0x100; _0x4854b6++) { _0x1a7be1 = (_0x1a7be1 + _0x2dcf60[_0x4854b6] + _0x42782b['charCodeAt'](_0x4854b6 % _0x42782b['length'])) % 0x100; _0x1172dd = _0x2dcf60[_0x4854b6]; _0x2dcf60[_0x4854b6] = _0x2dcf60[_0x1a7be1]; _0x2dcf60[_0x1a7be1] = _0x1172dd; } _0x4854b6 = 0x0; _0x1a7be1 = 0x0; for (var _0x1665c7 = 0x0; _0x1665c7 < _0x1a9ff8['length']; _0x1665c7++) { _0x4854b6 = (_0x4854b6 + 0x1) % 0x100; _0x1a7be1 = (_0x1a7be1 + _0x2dcf60[_0x4854b6]) % 0x100; _0x1172dd = _0x2dcf60[_0x4854b6]; _0x2dcf60[_0x4854b6] = _0x2dcf60[_0x1a7be1]; _0x2dcf60[_0x1a7be1] = _0x1172dd; _0x174bc7 += String['fromCharCode'](_0x1a9ff8['charCodeAt'](_0x1665c7) ^ _0x2dcf60[(_0x2dcf60[_0x4854b6] + _0x2dcf60[_0x1a7be1]) % 0x100]); } return _0x174bc7; } _0x3277['EXLGCw'] = _0x94b928; _0x3277['IKJMLf'] = {}; _0x3277['SYpFPZ'] = !![]; } var _0x192215 = _0x3277['IKJMLf'][_0x3a034e]; if (_0x192215 === undefined) { if (_0x3277['bKqRbG'] === undefined) { _0x3277['bKqRbG'] = !![]; } _0x25feb6 = _0x3277['EXLGCw'](_0x25feb6, _0x42782b); _0x3277['IKJMLf'][_0x3a034e] = _0x25feb6; } else { _0x25feb6 = _0x192215; } return _0x25feb6; }; var jiamiKey = _0x3277('‫0', 'Acn8'); var m3u8Url = getQueryVariable(_0x3277('‫1', '04R#')); function getQueryVariable(_0x27ed50) { var _0x574e7a = { 'ATUDi': function (_0x1fd883, _0x21bcf7) { return _0x1fd883 == _0x21bcf7; } }; var _0x36aaa0 = window[_0x3277('‫2', 'XBXG')]['search']['substring'](0x1); var _0x65c3d4 = _0x36aaa0['split']('&'); for (var _0x162467 = 0x0; _0x162467 < _0x65c3d4[_0x3277('‫3', 'Kj63')]; _0x162467++) { var _0xfaba1a = _0x65c3d4[_0x162467][_0x3277('‫4', 'OVvF')]('='); if (_0x574e7a[_0x3277('‫5', 'flfP')](_0xfaba1a[0x0], _0x27ed50)) { return _0xfaba1a[0x1]; } } return ![]; } var player = videojs('myvideo'); var settings = { 'url': m3u8Url }; $[_0x3277('‮6', 'A2#C')](settings)['done'](function (_0x5f445b) { var _0x3dca21 = CryptoJS['AES'][_0x3277('‫7', 'OVvF')](_0x5f445b, jiamiKey); var _0x471db9 = _0x3dca21[_0x3277('‫8', '6tAQ')](CryptoJS[_0x3277('‮9', '04R#')][_0x3277('‫a', '$70k')]); let _0x3541b5 = new Blob([_0x471db9]); const _0x4fb0b8 = window[_0x3277('‫b', 'gpy6')][_0x3277('‮c', 'jJpv')](_0x3541b5); player[_0x3277('‮d', 'yGH%')]({ 'src': _0x4fb0b8, 'type': _0x3277('‮e', 'zn0n') }); player[_0x3277('‮f', 'G(n^')](_0x4fb0b8); player[_0x3277('‫10', 'gpy6')](); });; _0xodT = 'jsjiami.com.v6';
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body,
+      .video-js {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </div>
+</body>
