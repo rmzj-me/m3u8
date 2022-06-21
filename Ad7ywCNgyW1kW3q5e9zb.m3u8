@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-ALLOW-CACHE:YES
+#EXT-X-TARGETDURATION:4
+#EXTINF:3.021333,
+https://docimg1.docs.qq.com/image/hBhBEg1gt_xZKLn1mg0pZA.gif?w=1&h=1
+#EXTINF:1.016667,
+https://docimg2.docs.qq.com/image/xMPUkGA2AZmx21V1sD-Y5w.gif?w=1&h=1
+#EXT-X-ENDLIST
